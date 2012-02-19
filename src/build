@@ -1,0 +1,2 @@
+gcc -o bot bot.c ./core/config.c ./core/dataheap.c ./core/dbwrapper.c ./plugins/plugins.c  -lstrophe -lxml2 -lssl -lresolv -lmysqlclient
+
