@@ -6,11 +6,11 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "./core/strophe.h"
-#include "./core/dataheap.h"
-#include "./core/dbwrapper.h"
-#include "./core/config.h"
-#include "./plugins/plugins.h"
+#include "core/strophe.h"
+#include "core/dataheap.h"
+#include "core/dbwrapper.h"
+#include "core/config.h"
+#include "plugins/plugins.h"
 
 struct dbwrapper dbwr;
 struct NSTconfig nstr;
@@ -23,13 +23,13 @@ void userdata_handler(xmpp_conn_t * const conn,xmpp_ctx_t *ctx,xmpp_stanza_t * c
  else if(!strcmp(data,"exit")) i=3;
   switch(i){
     case 0:{
-       plugin_advizor(data);
+//       plugin_advizor(conn,ctx,data);
 
-        xmpp_stanza_t *reply, *body;
+/*        xmpp_stanza_t *reply, *body;
 	reply = xmpp_stanza_new(ctx);
 	xmpp_stanza_set_name(reply, "iq");
 	xmpp_stanza_set_attribute(reply, "from","nostrome@x-union.org/Bot");
-//	xmpp_stanza_set_attribute(reply, "to","jabber.org");
+	xmpp_stanza_set_attribute(reply, "to","jabber.org");
 	xmpp_stanza_set_attribute(reply, "id","2221");
 	xmpp_stanza_set_type(reply, "get");
 
@@ -41,26 +41,11 @@ void userdata_handler(xmpp_conn_t * const conn,xmpp_ctx_t *ctx,xmpp_stanza_t * c
 	xmpp_send(conn, reply);
 	xmpp_stanza_release(reply);
 	xmpp_stanza_release(body);
-
+*/
         break;
      }
     case 1:{
-        xmpp_stanza_t *reply, *body;
-	reply = xmpp_stanza_new(ctx);
-	xmpp_stanza_set_name(reply, "presence");
-	xmpp_stanza_set_attribute(reply, "to", "test@conference.x-union.org/Nostrome");
-
-        body = xmpp_stanza_new(ctx);
-        xmpp_stanza_set_name(body, "x");
-	xmpp_stanza_set_attribute(body, "xmlns", "http://jabber.org/protocol/muc");
-
-
-	xmpp_stanza_add_child(reply,body);
-
-	xmpp_send(conn, reply);
-	xmpp_stanza_release(reply);
-	xmpp_stanza_release(body);
-
+        plugin_advizor(conn,ctx,data);
         break;
     }
     case 2:{

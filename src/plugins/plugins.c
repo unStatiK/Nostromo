@@ -4,7 +4,8 @@
 struct plugin_list pl;
 
 void init_pl(){
-add_plugin("ping",0,&ping_handler);
+//add_plugin("ping",0,&ping_handler);
+add_plugin("join",0,&join_handler);
 }
 
 void add_plugin(char *name,int n,int add_f){
@@ -22,7 +23,8 @@ int get_plugin(char *data){
   return pl.p_foo;
 }
 
-void plugin_advizor(char *data){
+void plugin_advizor(xmpp_conn_t *conn,xmpp_ctx_t *ctx,char *data){
  void (*i)() = get_plugin(data);
- (*i)();
+ (*i)(conn,ctx);
 }
+
