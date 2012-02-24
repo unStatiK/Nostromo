@@ -1,6 +1,6 @@
 #include "plugins.h"
+#include "hashtable.c"
 #include "core_plugin.c"
-
 struct plugin_list pl;
 
 void init_pl(){
@@ -14,9 +14,6 @@ void add_plugin(char *name,int n,int add_f){
   pl.n_par=n;
   pl.p_foo=add_f;
 
-//  pl.next;
-
-//(int (*)(void *))(int t);
 }
 
 int get_plugin(char *data){
