@@ -7,4 +7,4 @@ ultimate jabber bot
 .Optional Title
 NOTE: This is prototype code
 
-image:nostromo.jpg[]
+image:https://github.com/unStatiK/Nostromo/raw/master/nostromo.jpg[]
