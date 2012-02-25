@@ -1,18 +1,10 @@
-Main Header
-===========
-Optional Author Name optional@author.email
-Optional version, optional date
-Author    AlternativeWayToSetOptional Author Name
-Email     AlternativeWayToSetOptional@author.email
-Date      AlternativeWayToSetOptional date
-Revision  AlternativeWayToSetOptional version
 
-
-Level 1
+Nostromo
 -------
-Text.
+ultimate jabber bot
 
 
 .Optional Title
-NOTE: This is an example
-      single-paragraph note.
+NOTE: This is prototype code
+
+image:nostromo.jpg[]
