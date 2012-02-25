@@ -3,8 +3,12 @@ Nostromo
 -------
 ultimate jabber bot
 
-
-.Optional Title
 NOTE: This is prototype code
 
 image:https://github.com/unStatiK/Nostromo/raw/master/nostromo.jpg[]
+
+.Features
+* leighweight
+* ultimate fast
+* minimal depensense
+* plugiable
