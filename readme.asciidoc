@@ -15,3 +15,6 @@ image:https://github.com/unStatiK/Nostromo/raw/master/nostromo.jpg[]
 
 RoadMap for release
 +++++++++++++++++++
+- <core plugin> [ping,ban,set,join,exit,uptime]
+- DBwrapper [support MySQl,PostgreSQL,sqlite,MariaDB]
+- logging MUC
