@@ -11,3 +11,5 @@ image:https://github.com/unStatiK/Nostromo/raw/master/nostromo.jpg[]
 * ultimate fast
 * minimal dependence
 * pluggable
+
+.RoadMap for release
