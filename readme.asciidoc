@@ -13,7 +13,7 @@ image:https://github.com/unStatiK/Nostromo/raw/master/nostromo.jpg[]
 * pluggable
 
 
-RoadMap for release
+RoadMap for release:
 +++++++++++++++++++
 - <core plugin> [ping,ban,set,join,exit,uptime]
 - DBwrapper [support MySQl,PostgreSQL,sqlite,MariaDB]
